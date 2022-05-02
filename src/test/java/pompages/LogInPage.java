@@ -1,5 +1,7 @@
 package pompages;
 
+import io.qameta.allure.Step;
+import models.LoginModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
@@ -15,10 +17,18 @@ public class LogInPage extends BasePage{
     public LogInPage(WebDriver driver) {
         super(driver);
     }
+    @Step("LogIn exist user in system")
     public void loginOldUser(String email, String password){
         driver.get(WebUrls.LOG_IN_URL);
         driver.findElement(LOGIN_INPUT).sendKeys(email);
         driver.findElement(PASSWORD_INPUT).sendKeys(password);
+        driver.findElement(LOGIN_BUTTON).click();
+    }
+    @Step ("Login user that don't registered in the application with")
+    public void loginAnyUser(LoginModel loginModel){
+        driver.get(WebUrls.LOG_IN_URL);
+        driver.findElement(LOGIN_INPUT).sendKeys(loginModel.getEmail());
+        driver.findElement(PASSWORD_INPUT).sendKeys(loginModel.getPassword());
         driver.findElement(LOGIN_BUTTON).click();
     }
     public String profileText(){
