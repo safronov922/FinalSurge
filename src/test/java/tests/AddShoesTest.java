@@ -13,9 +13,9 @@ import utilities.PropertiesManager;
 import utilities.RetryTests;
 
 public class AddShoesTest extends BaseTest {
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(AddShoesTest.class.getName());
 
-    @Test(retryAnalyzer = RetryTests.class)
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that shoes was add")
     @Description("Adding new shoe at the tracker")
     public void addDailyVitalsTest() {
         LOGGER.info("addDailyVitalsTest started");

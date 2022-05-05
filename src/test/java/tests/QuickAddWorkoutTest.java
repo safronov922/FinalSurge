@@ -14,9 +14,9 @@ import utilities.PropertiesManager;
 import utilities.RetryTests;
 
 public class QuickAddWorkoutTest extends BaseTest{
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(QuickAddWorkoutTest.class.getName());
 
-    @Test(retryAnalyzer = RetryTests.class)
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that workout added")
     @Description("Adding new workout to calendar with quick function")
     public void addQuickWorkoutTest(){
         LOGGER.info("addQuickWorkoutTest started" );

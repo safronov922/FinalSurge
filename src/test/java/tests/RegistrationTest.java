@@ -11,8 +11,8 @@ import testdata.GetRegistrationModel;
 import utilities.RetryTests;
 
 public class RegistrationTest extends BaseTest{
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
-    @Test(retryAnalyzer = RetryTests.class)
+    private static final Logger LOGGER = LogManager.getLogger(RegistrationTest.class.getName());
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that user created and login")
     @Description("Checking registration user in the system")
     public void registrationNewUserTest(){
         LOGGER.info("registrationNewUserTest started" );

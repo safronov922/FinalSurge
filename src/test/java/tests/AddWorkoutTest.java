@@ -14,9 +14,9 @@ import utilities.PropertiesManager;
 import utilities.RetryTests;
 
 public class AddWorkoutTest extends BaseTest{
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(AddWorkoutTest.class.getName());
 
-    @Test(retryAnalyzer = RetryTests.class)
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that workout was added")
     @Description("Adding new workout at the system")
     public void addWorkoutTest(){
         LOGGER.info("addWorkoutTest started" );

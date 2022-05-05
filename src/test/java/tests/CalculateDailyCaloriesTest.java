@@ -16,9 +16,9 @@ import utilities.PropertiesManager;
 import utilities.RetryTests;
 
 public class CalculateDailyCaloriesTest extends BaseTest{
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(CalculateDailyCaloriesTest.class.getName());
 
-    @Test(retryAnalyzer = RetryTests.class)
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that daily calories calculated")
     @Description("Checking calculator of daily calories")
     public void addDailyCaloriesTest() {
         LOGGER.info("addDailyCaloriesTest");
