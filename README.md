@@ -1,5 +1,11 @@
 # FinalSurge
 id Проверка
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ol>
 1  Регистация нового пользователя
 2  Логин в систему существующего пользователя
 3  Логин в систему несуществующего пользователя
