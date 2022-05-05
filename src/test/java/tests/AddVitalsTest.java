@@ -13,8 +13,8 @@ import utilities.PropertiesManager;
 import utilities.RetryTests;
 
 public class AddVitalsTest extends BaseTest{
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
-    @Test(retryAnalyzer = RetryTests.class)
+    private static final Logger LOGGER = LogManager.getLogger(AddVitalsTest.class.getName());
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that vitals was add")
     @Description("Adding new vitals at the system")
     public void addDailyVitalsTest(){
         LOGGER.info("addDailyVitalsTest started" );

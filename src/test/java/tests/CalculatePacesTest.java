@@ -12,9 +12,9 @@ import utilities.PropertiesManager;
 import utilities.RetryTests;
 
 public class CalculatePacesTest extends BaseTest {
-    private static final Logger LOGGER = LogManager.getLogger(LogInTest.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(CalculatePacesTest.class.getName());
 
-    @Test(retryAnalyzer = RetryTests.class)
+    @Test(retryAnalyzer = RetryTests.class, priority = 1,description = "Test checks that paces need calculated")
     @Description("Checking calculation of paces needs")
     public void calculatePacesTest() {
         LOGGER.info("calculatePacesTest started");
