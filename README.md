@@ -1,5 +1,5 @@
 # FinalSurge
-<div style=”paddint-top:20px;”> id Проверка </div>
+<div style=”paddint-top:500px;”> id Проверка </div>
 <ol>
   <li>Регистация нового пользователя</li>
   <li>Логин в систему существующего пользователя</li>
