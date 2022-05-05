@@ -4,6 +4,13 @@
     <test name="LoginTests">
         <classes>
             <class name="tests.LogInTest"> </class>
+            <class name="tests.AddShoesTest"></class>
+            <class name="tests.AddVitalsTest"></class>
+            <class name="tests.AddWorkoutTest"></class>
+            <class name="tests.QuickAddWorkoutTest"></class>
+            <class name="tests.RegistrationTest"></class>
+            <class name="tests.CalculateDailyCaloriesTest"></class>
+            <class name="tests.CalculatePacesTest"></class>
             <parameter name="browser" value="edge"></parameter>
         </classes>
     </test> <!-- Test -->

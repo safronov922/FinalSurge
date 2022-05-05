@@ -37,5 +37,8 @@ public class LogInPage extends BasePage{
     public String ErrorMessage(){
         return driver.findElement(INVALID_CREDENTIALS).getText();
     }
+    public void openRegistrationPage(){
+        driver.findElement(REGISTRATION_BUTTON).click();
+    }
 
 }
